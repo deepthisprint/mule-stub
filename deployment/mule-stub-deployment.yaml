@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mule-stub
+spec:
+  selector:
+    matchLabels:
+      app: mule-stub
+      project: sprint-poc
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mule-stub
+        project: sprint-poc
+    spec:
+      containers:
+      - name: mule-stub
+        image: coc.icp:8500/sprint-poc/mule-stub
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000

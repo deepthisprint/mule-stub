@@ -1,2 +1,3 @@
 # mule-stub
-Stub app for Mule API
+
+A simple Node.js app that provides a stub for the sprint-poc mule service

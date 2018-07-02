@@ -1,0 +1,13 @@
+{
+	"name": "mule",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"express": "4.15.x",
+		"body-parser": "1.18.*"
+	},
+	"repository": {}
+}
