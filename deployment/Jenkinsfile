@@ -13,9 +13,7 @@ podTemplate(label: label,
 	node(label) {
 		
 	  stage('Get Source') {
-	  	git branch: 'master',
-    	credentialsId: 'jconallen',
-		url: "http://169.55.4.141:31981/jconallen/mule-stub.git"
+	  	git "https://github.com/jconallen/mule-stub.git"
 	  }
 
 	  def props = readProperties  file:'deployment/pipeline.properties'
